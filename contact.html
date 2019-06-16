@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SpaceX</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="spacex, contact, space, question, mission">
+<meta name="author" content="Christian Schrodahl">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <section class="container row">
+        <div class="col1"><a href="index.html"><img src="img/spacex_logo_white.png" alt="SpaceX logo"></a></div>
+        <a id="ham-menu"><img src="img/hamburgerIcon.svg"></a>
+    <nav id="menu" class="topMenu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="mission.html#Falcon">MISSION</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    </section>
+</header>
+    <section id="topHeader-contact">
+		<h1 id="pageHeader">CONTACT</h1>
+            <div class="header-banner contact-banner">
+				<div class="container contact-row">
+				<div class="contact-col1"><h4>SPACEX HEADQUARTERS Rocket Road Hawthorne, California</h4></div>
+					<div class="contact-col2 mailRow"><div class="mailCol"><h4>MEDIA INQUIRIES</h4><a href="mailto:media@spacex.com">media@spacex.com</a></div><div class="mailCol"><h4>SALES INQUIRIES</h4><a href="mailto:sales@spacex.com">sales@spacex.com</a></div></div>
+				<div class="contact-col1"><h4>Phone:</h4><a href="tel:3103636000">310-363-6000</a></div>
+				</div>
+            </div>
+    </section>
+    <main class="container row">
+        <div class="col1">
+			<div id="contact-form">
+                <label>What is your name?</label>
+                <input type="text" name="firstName" id="firstName">
+                <span class="error" id="firstNameError">This field cannot be blank</span>
+                <label>What is your phone number?</label>
+                <input type="text" name="phone" id="phone">
+                <span class="error" id="phoneError">Please enter a correct phone number</span>
+                <label>What is you Email?</label>
+                <input type="text" name="email" id="email">
+                <span class="error" id="emailError">Please enter a correct email address</span>
+                <label>Do you have any questions?</label>
+                <textarea></textarea>
+                <button type="submit" id="submitContact">SUBMIT</button>
+                </div>
+		</div>
+		<div class="col1"><div id="map"></div></div>
+    </main>
+<footer>
+    <section class="container row">
+        <div class="col1"><h3>Join Our Community</h3> <p>We have a strong community. If you are interested in discussing about our missions with other space enthusiasts.</p>
+            <a href="https://www.reddit.com/r/spacex/">Click Here</a>
+        </div>
+        <div class="col1"><h3>Contact Information</h3> <p>Phone: <a>310-363-6000</a></p>
+        <h4>MEDIA INQUIRIES</h4><a href="mailto:media@spacex.com">media@spacex.com</a>
+        <h4>SALES INQUIRIES</h4><a href="mailto:sales@spacex.com">sales@spacex.com</a>
+        </div>
+        <div id="social-M" class="col1">
+            <h3>Social Media</h3>
+            <a href="https://nb-no.facebook.com/groups/spacexgroup/"><img src="img/facebook.svg"></a>
+            <a href="https://twitter.com/spacex"><img src="img/twitter.svg"></a>
+            <a href="https://www.instagram.com/spacex/?hl=nb"><img src="img/instagram.svg"></a>
+        </div>
+    </section>
+    <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mission.html#Falcon">MISSION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+    </section>
+    <section id="copyright">
+        <p>© 2019 Made by Christian schrodahl</p>
+    </section>
+</footer>
+<script src="contact.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPrVx0vU50MN7ktO9VJm1BPNHhMUA3CpA&callback=initMap"
+    async defer></script>
+</body>
+</html>
+
+

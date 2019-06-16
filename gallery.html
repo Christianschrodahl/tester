@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SpaceX</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="spacex, space, rocket, launch, mission">
+<meta name="author" content="Christian Schrodahl">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <section class="container row">
+        <div class="col1"><a href="index.html"><img src="img/spacex_logo_white.png" alt="SpaceX logo"></a></div>
+        <a id="ham-menu"><img src="img/hamburgerIcon.svg"></a>
+    <nav id="menu" class="topMenu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="mission.html#Falcon">MISSION</a></li>
+            <li class="active"><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    </section>
+</header>
+    <section id="topHeader-gallery">
+		<h1 id="pageHeader">GALLERY</h1>
+            <div class="header-banner">
+                <div class=" banner-small">
+                <div class="container row">
+                <div class="col2"><h2>Watch SpaceX Live Launches Here</h2></div>
+                <div class="col1"><a id="header-btn" href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA">Watch Now</a></div>
+                </div></div>
+                <div class="countdown">
+                <div class="container count-row">
+                    <div class="count-col1"><p id="days">0</p><h3>Days</h3></div>
+                    <div class="count-col1"><p id="hours">0</p><h3>Hours</h3></div>
+                    <div class="count-col1"><p id="minutes">0</p><h3>Minutes</h3></div>
+                    <div class="count-col1"><p id="seconds">0</p><h3>Seconds</h3></div>
+                </div></div>
+            </div>
+    </section>
+	<main class="container">
+		<div class="gall-row">
+		<div class="gall-col1"><button class="gallery cursor" onclick="activeGall(event, 'FirstFlight')"><div><img src="img/firstFlight/small/first_reflight_-_01_img_6067.jpg"><h4>First-Flight</h4></div></button></div>
+		<div class="gall-col1"><button class="gallery cursor" onclick="activeGall(event, '39A')"><div><img src="img/39a/small/39a_04_bi0i1343.jpg"><h4>39A Launch</h4></div></button></div>
+		<div class="gall-col1"><button class="gallery cursor" onclick="activeGall(event, 'Hardware')"><div><img src="img/hardware/small/geometry_05_poidx-060916-03_-_resize.jpg"><h4>Hardware</h4></div></button></div>
+		<div class="gall-col1"><button class="gallery cursor" onclick="activeGall(event, 'Year2016')"><div><img src="img/2016/small/2016_-_02_jason3_vertical2.jpg"><h4>2016</h4></div></button></div>
+		<div class="gall-col1"><button class="gallery cursor" onclick="activeGall(event, 'Year2015')"><div><img src="img/2015/small/2015_-_01_crs6_hangar.jpg"><h4>2015</h4></div></button></div>
+		<div class="gall-col1"><button class="gallery cursor" onclick="activeGall(event, 'Year2014')"><div><img src="img/2014/small/2014_-_1_crs-3_dragonmating.jpg"><h4>2014</h4></div></button></div>
+		</div>
+		<div id="FirstFlight" class="popup">
+					<a class="close" onclick="closeBtn()">Close</a>
+					<div class="row">
+					<div id="img-list" class="col1">
+				 	<img class="cursor" src="img/firstFlight/small/first_reflight_-_01_img_6067.jpg" onclick="currentSlide(1)" alt="initial launch of reflown rocket from cape canaveral">
+					<img class="cursor" src="img/firstFlight/small/first_reflight_-_02_dsc_1054.jpg" onclick="currentSlide(2)" alt="rocket leaves the earth's atmosphere for the first time">
+					<img class="cursor" src="img/firstFlight/small/first_reflight_-_03_25787998624_3ca213be1e_o.jpg" onclick="currentSlide(3)" alt="falcon 9 first stage landing on droneship 'of course i still love you'">
+					<img class="cursor" src="img/firstFlight/small/first_reflight_-_04_first_stage_return5.jpg" onclick="currentSlide(4)" alt="falcon 9 and droneship 'of course i still love you' back at port">
+					<img class="cursor" src="img/firstFlight/small/first_reflight_-_05_crs8_recovered_first_stage_3.jpg" onclick="currentSlide(5)" alt="falcon 9 in the hangar after flight">
+					<img class="cursor" src="img/firstFlight/small/first_reflight_-_06_dsc04633.jpg" onclick="currentSlide(6)" alt="team in mcgregor, tx lowers the rocket to be re-tested">
+					<img class="cursor" src="img/firstFlight/small/first_reflight_-_07_b1021_hotfire_retouch_-_dsc05680.jpg" onclick="currentSlide(7)" alt="rocket is re-fired in mcgregor, tx prior to re-flight">
+					<img class="cursor" src="img/firstFlight/small/first_reflight_-_08_ses-10_drone_l-0_-_033117_-_bi0i2389.jpg" onclick="currentSlide(8)" alt="rocket at sunrise, ahead of its second launch">
+				</div>
+				<div class="col1 largeImg">
+			 <div class="firstFlight">
+   			 <div class="numbertext">1 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_01_img_6067%20(1).jpg" alt="initial launch of reflown rocket from cape canaveral">
+  			</div>
+			<div class="firstFlight">
+   			 <div class="numbertext">2 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_02_dsc_1054.jpg" alt="rocket leaves the earth's atmosphere for the first time">
+  			</div>
+			<div class="firstFlight">
+   			 <div class="numbertext">3 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_03_25787998624_3ca213be1e_o.jpg" alt="falcon 9 first stage landing on droneship 'of course i still love you'">
+  			</div>
+			<div class="firstFlight">
+   			 <div class="numbertext">4 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_04_first_stage_return5.jpg" alt="falcon 9 and droneship 'of course i still love you' back at port">
+  			</div>
+			<div class="firstFlight">
+   			 <div class="numbertext">5 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_05_crs8_recovered_first_stage_3.jpg" alt="falcon 9 in the hangar after flight">
+  			</div>
+			<div class="firstFlight">
+   			 <div class="numbertext">6 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_06_dsc04633.jpg" alt="team in mcgregor, tx lowers the rocket to be re-tested">
+  			</div>
+			<div class="firstFlight">
+   			 <div class="numbertext">7 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_07_b1021_hotfire_retouch_-_dsc05680.jpg" alt="rocket is re-fired in mcgregor, tx prior to re-flight">
+  			</div>
+			<div class="firstFlight">
+   			 <div class="numbertext">8 / 8</div>
+    		 <img src="img/firstFlight/first_reflight_-_08_ses-10_drone_l-0_-_033117_-_bi0i2389.jpg" alt="rocket at sunrise, ahead of its second launch">
+  			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			</div>
+		</div>
+		<div id="39A" class="popup">
+					<a class="close" onclick="closeBtn()">Close</a>
+					<div class="row">
+					<div id="img-list" class="col1">
+				 	<img class="cursor" src="img/39a/small/39a_01_bi0i1468.jpg" onclick="currentSlide(1)" alt="rocket hold-down on launch pad">
+					<img class="cursor" src="img/39a/small/39a_03_poidx-cape-120816-bi0i1330_-_resize.jpg" onclick="currentSlide(2)" alt="acoustic suppression 'rain birds' and water tower">
+					<img class="cursor" src="img/39a/small/39a_06_39a-2_resize.jpg" onclick="currentSlide(3)" alt="hangar and pad at launch complex 39a">
+					<img class="cursor" src="img/39a/small/39a_09_crs10_-_lminus2_-_021617_-_bi0i8632.jpg" onclick="currentSlide(4)" alt="base of the transporter erector at launch complex 39a">
+					<img class="cursor" src="img/39a/small/39a_10_crs10_-_lminus2_-_021617_-_bi0i8678_-_resize.jpg" onclick="currentSlide(5)" alt="falcon 9 prepares to rollout to the launch pad">
+					<img class="cursor" src="img/39a/small/39a_11_crs10_-_lminus2_-_vertical021617_-_129a9131.jpg" onclick="currentSlide(6)" alt="falcon 9 and dragon vertical on launch complex 39a">
+					<img class="cursor" src="img/39a/small/39a_04_bi0i1343.jpg" onclick="currentSlide(7)" alt="an abutment that supports the transporter erector">
+					<img class="cursor" src="img/39a/small/39a_12_crs-10_nwramp.jpg" onclick="currentSlide(8)" alt="falcon 9 and dragon launch from launch complex 39a">
+				</div>
+				<div class="col1 largeImg">
+			 <div class="f39A">
+   			 <div class="numbertext">1 / 8</div>
+    		 <img src="img/39a/39a_01_bi0i1468%20(1).jpg" alt="rocket hold-down on launch pad">
+  			</div>
+			<div class="f39A">
+   			 <div class="numbertext">2 / 8</div>
+    		 <img src="img/39a/39a_03_poidx-cape-120816-bi0i1330_-_resize.jpg" alt="acoustic suppression 'rain birds' and water tower">
+  			</div>
+			<div class="f39A">
+   			 <div class="numbertext">3 / 8</div>
+    		 <img src="img/39a/39a_06_39a-2_resize.jpg" alt="hangar and pad at launch complex 39a">
+  			</div>
+			<div class="f39A">
+   			 <div class="numbertext">4 / 8</div>
+    		 <img src="img/39a/39a_09_crs10_-_lminus2_-_021617_-_bi0i8632.jpg" alt="base of the transporter erector at launch complex 39a">
+  			</div>
+			<div class="f39A">
+   			 <div class="numbertext">5 / 8</div>
+    		 <img src="img/39a/39a_10_crs10_-_lminus2_-_021617_-_bi0i8678_-_resize.jpg" alt="falcon 9 prepares to rollout to the launch pad">
+  			</div>
+			<div class="f39A">
+   			 <div class="numbertext">6 / 8</div>
+    		 <img src="img/39a/39a_11_crs10_-_lminus2_-_vertical021617_-_129a9131.jpg" alt="falcon 9 and dragon vertical on launch complex 39a">
+  			</div>
+			<div class="f39A">
+   			 <div class="numbertext">7 / 8</div>
+    		 <img src="img/39a/39a_04_bi0i1343.jpg" alt="an abutment that supports the transporter erector">
+  			</div>
+			<div class="f39A">
+   			 <div class="numbertext">8 / 8</div>
+    		 <img src="img/39a/39a_12_crs-10_nwramp.jpg" alt="falcon 9 and dragon launch from launch complex 39a">
+  			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			</div>
+		</div>
+		<div id="Hardware" class="popup">
+					<a class="close" onclick="closeBtn()">Close</a>
+					<div class="row">
+					<div id="img-list" class="col1">
+				 	<img class="cursor" src="img/hardware/small/geometry_05_poidx-060916-03_-_resize.jpg" onclick="currentSlide(1)" alt="mating the octaweb of a falcon heavy center core to the tank">
+					<img class="cursor" src="img/hardware/small/geometry_06_poidx-060916-08_-_resize.jpg" onclick="currentSlide(2)" alt="lighting the inside of a fairing half for inspection">
+					<img class="cursor" src="img/hardware/small/geometry_07_poidx-081116-399a8802_-_resize.jpg" onclick="currentSlide(3)" alt="close-up of the stage 1 to stage 2 quick disconnect">
+					<img class="cursor" src="img/hardware/small/geometry_08_poidx-062816-06_-_resize.jpg" onclick="currentSlide(4)" alt="inspecting a falcon 9 interstage">
+					<img class="cursor" src="img/hardware/small/geometry_09_mvac_shipping-129a9726_-_resize.jpg" onclick="currentSlide(5)" alt="a merlin vacuum engine prepares to be shipped for testing">
+					<img class="cursor" src="img/hardware/small/geometry_10_poidx-082316-399a0542_-_resize_and_retouch.jpg" onclick="currentSlide(6)" alt="a tool for constructing half of a falcon fairing">
+					<img class="cursor" src="img/hardware/small/geometry_11_poidx-051716-02_-_resize.jpg" onclick="currentSlide(7)" alt="vacuum lines for the carbon composites curing oven">
+					<img class="cursor" src="img/hardware/small/geometry_12_default_poidx_10.18.16-3_-_resize.jpg" onclick="currentSlide(8)" alt="falcon 9 gridfin prior to painting">
+				</div>
+				<div class="col1 largeImg">
+			 <div class="hardW">
+   			 <div class="numbertext">1 / 8</div>
+    		 <img src="img/hardware/geometry_05_poidx-060916-03_-_resize%20(1).jpg" alt="mating the octaweb of a falcon heavy center core to the tank">
+  			</div>
+			<div class="hardW">
+   			 <div class="numbertext">2 / 8</div>
+    		 <img src="img/hardware/geometry_06_poidx-060916-08_-_resize.jpg" alt="lighting the inside of a fairing half for inspection">
+  			</div>
+			<div class="hardW">
+   			 <div class="numbertext">3 / 8</div>
+    		 <img src="img/hardware/geometry_07_poidx-081116-399a8802_-_resize.jpg" alt="close-up of the stage 1 to stage 2 quick disconnect">
+  			</div>
+			<div class="hardW">
+   			 <div class="numbertext">4 / 8</div>
+    		 <img src="img/hardware/geometry_08_poidx-062816-06_-_resize.jpg" alt="inspecting a falcon 9 interstage">
+  			</div>
+			<div class="hardW">
+   			 <div class="numbertext">5 / 8</div>
+    		 <img src="img/hardware/geometry_09_mvac_shipping-129a9726_-_resize.jpg" alt="a merlin vacuum engine prepares to be shipped for testing">
+  			</div>
+			<div class="hardW">
+   			 <div class="numbertext">6 / 8</div>
+    		 <img src="img/hardware/geometry_10_poidx-082316-399a0542_-_resize_and_retouch.jpg" alt="a tool for constructing half of a falcon fairing">
+  			</div>
+			<div class="hardW">
+   			 <div class="numbertext">7 / 8</div>
+    		 <img src="img/hardware/geometry_11_poidx-051716-02_-_resize.jpg" alt="vacuum lines for the carbon composites curing oven">
+  			</div>
+			<div class="hardW">
+   			 <div class="numbertext">8 / 8</div>
+    		 <img src="img/hardware/geometry_12_default_poidx_10.18.16-3_-_resize.jpg" alt="falcon 9 gridfin prior to painting">
+  			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			</div>
+		</div>
+		<div id="Year2016" class="popup">
+					<a class="close" onclick="closeBtn()">Close</a>
+					<div class="row">
+					<div id="img-list" class="col1">
+				 	<img class="cursor" src="img/2016/small/2016_-_02_jason3_vertical2.jpg" onclick="currentSlide(1)" alt="falcon 9 vertical at vandenberg air force base">
+					<img class="cursor" src="img/2016/small/2016_-_03_399a3017.jpg" onclick="currentSlide(2)" alt="falcon 9 first stage ready for testing in mcgregor, tx">
+					<img class="cursor" src="img/2016/small/2016_-_04_crs8_landing.jpg" onclick="currentSlide(3)" alt="falcon 9 first stage landing on droneship 'of course i still love you'">
+					<img class="cursor" src="img/2016/small/2016_-_05_crs8_landed3.jpg" onclick="currentSlide(4)" alt="falcon 9 first stage landing on droneship 'of course i still love you'">
+					<img class="cursor" src="img/2016/small/2016_-_06_crs8_landed2.jpg" onclick="currentSlide(5)" alt="falcon 9 first stage after landing on droneship 'of course i still love you'">
+					<img class="cursor" src="img/2016/small/2016_-_07_rics_jcsat-img_0678.jpg" onclick="currentSlide(6)" alt="falcon 9 first stage after landing on droneship 'of course i still love you'">
+					<img class="cursor" src="img/2016/small/2016_-_08_default_-27042449393_789ca61efc_o_1.jpg" onclick="currentSlide(7)" alt="recovered falcon 9 first stages in the hangar">
+					<img class="cursor" src="img/2016/small/2016_-_09_ses-9_0301_06.jpg" onclick="currentSlide(8)" alt="falcon 9 vertical on the pad at space launch complex 40">
+				</div>
+				<div class="col1 largeImg">
+			 <div class="y2016">
+   			 <div class="numbertext">1 / 8</div>
+    		 <img src="img/2016/2016_-_02_jason3_vertical2%20(1).jpg" alt="falcon 9 vertical at vandenberg air force base">
+  			</div>
+			<div class="y2016">
+   			 <div class="numbertext">2 / 8</div>
+    		 <img src="img/2016/2016_-_03_399a3017.jpg" alt="falcon 9 first stage ready for testing in mcgregor, tx">
+  			</div>
+			<div class="y2016">
+   			 <div class="numbertext">3 / 8</div>
+    		 <img src="img/2016/2016_-_04_crs8_landing.jpg" alt="falcon 9 first stage landing on droneship 'of course i still love you'">
+  			</div>
+			<div class="y2016">
+   			 <div class="numbertext">4 / 8</div>
+    		 <img src="img/2016/2016_-_05_crs8_landed3.jpg" alt="falcon 9 first stage landing on droneship 'of course i still love you'">
+  			</div>
+			<div class="y2016">
+   			 <div class="numbertext">5 / 8</div>
+    		 <img src="img/2016/2016_-_06_crs8_landed2.jpg" alt="falcon 9 first stage after landing on droneship 'of course i still love you'">
+  			</div>
+			<div class="y2016">
+   			 <div class="numbertext">6 / 8</div>
+    		 <img src="img/2016/2016_-_07_rics_jcsat-img_0678.jpg" alt="falcon 9 first stage after landing on droneship 'of course i still love you'">
+  			</div>
+			<div class="y2016">
+   			 <div class="numbertext">7 / 8</div>
+    		 <img src="img/2016/2016_-_08_default_-27042449393_789ca61efc_o_1.jpg" alt="recovered falcon 9 first stages in the hangar">
+  			</div>
+			<div class="y2016">
+   			 <div class="numbertext">8 / 8</div>
+    		 <img src="img/2016/2016_-_09_ses-9_0301_06.jpg" alt="falcon 9 vertical on the pad at space launch complex 40">
+  			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			</div>
+		</div>
+		<div id="Year2015" class="popup">
+					<a class="close" onclick="closeBtn()">Close</a>
+					<div class="row">
+					<div id="img-list" class="col1">
+				 	<img class="cursor" src="img/2015/small/2015_-_01_crs6_hangar.jpg" onclick="currentSlide(1)" alt="falcon 9 in the hangar at space launch complex 40">
+					<img class="cursor" src="img/2015/small/2015_-_02_crs5_late_load_962.jpg" onclick="currentSlide(2)" alt="dragon spacecraft loaded with science for the space station">
+					<img class="cursor" src="img/2015/small/2015_-_03_crs6_launch_water.jpg" onclick="currentSlide(3)" alt="falcon 9 lifts off from space launch complex 40">
+					<img class="cursor" src="img/2015/small/2015_-_04_crs5_dragon_orbit13.jpg" onclick="currentSlide(4)" alt="dragon spacecraft in orbit">
+					<img class="cursor" src="img/2015/small/2015_-_05_crs6_dragon_under_chutes2.jpg" onclick="currentSlide(5)" alt="dragon spacecraft returning to earth from the international space station">
+					<img class="cursor" src="img/2015/small/2015_-_06_f9-21_orbcomm_x_launch_and_land.jpg" onclick="currentSlide(6)" alt="long exposure of falcon 9 launching and landing">
+					<img class="cursor" src="img/2015/small/2015_-_07_orbcommii_landing_from_helo_copy.jpg" onclick="currentSlide(7)" alt="falcon 9 first stage landing on landing zone 1">
+					<img class="cursor" src="img/2015/small/2015_-_08_94m5a0267.jpg" onclick="currentSlide(8)" alt="first recovered falcon 9 in the hangar at launch complex 39a">
+				</div>
+				<div class="col1 largeImg">
+			 <div class="y2015">
+   			 <div class="numbertext">1 / 8</div>
+    		 <img src="img/2015/2015_-_01_crs6_hangar%20(1).jpg" alt="falcon 9 in the hangar at space launch complex 40">
+  			</div>
+			<div class="y2015">
+   			 <div class="numbertext">2 / 8</div>
+    		 <img src="img/2015/2015_-_02_crs5_late_load_962.jpg" alt="dragon spacecraft loaded with science for the space station">
+  			</div>
+			<div class="y2015">
+   			 <div class="numbertext">3 / 8</div>
+    		 <img src="img/2015/2015_-_03_crs6_launch_water.jpg" alt="falcon 9 lifts off from space launch complex 40">
+  			</div>
+			<div class="y2015">
+   			 <div class="numbertext">4 / 8</div>
+    		 <img src="img/2015/2015_-_04_crs5_dragon_orbit13.jpg" alt="dragon spacecraft in orbit">
+  			</div>
+			<div class="y2015">
+   			 <div class="numbertext">5 / 8</div>
+    		 <img src="img/2015/2015_-_05_crs6_dragon_under_chutes2.jpg" alt="dragon spacecraft returning to earth from the international space station">
+  			</div>
+			<div class="y2015">
+   			 <div class="numbertext">6 / 8</div>
+    		 <img src="img/2015/2015_-_06_f9-21_orbcomm_x_launch_and_land.jpg" alt="falcon 9 first stage landing on landing zone 1">
+  			</div>
+			<div class="y2015">
+   			 <div class="numbertext">7 / 8</div>
+    		 <img src="img/2015/2015_-_07_orbcommii_landing_from_helo_copy.jpg" alt="falcon 9 first stage landing on landing zone 1">
+  			</div>
+			<div class="y2015">
+   			 <div class="numbertext">8 / 8</div>
+    		 <img src="img/2015/2015_-_08_94m5a0267.jpg" alt="first recovered falcon 9 in the hangar at launch complex 39a">
+  			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			</div>
+		</div>
+		<div id="Year2014" class="popup">
+					<a class="close" onclick="closeBtn()">Close</a>
+					<div class="row">
+					<div id="img-list" class="col1">
+				 	<img class="cursor" src="img/2014/small/2014_-_1_crs-3_dragonmating.jpg" onclick="currentSlide(1)" alt="dragon spacecraft mated to falcon 9 rocket">
+					<img class="cursor" src="img/2014/small/2014_-_2_crs3_launch_causeway_2.jpg" onclick="currentSlide(2)" alt="falcon 9 and dragon launch from slc-40">
+					<img class="cursor" src="img/2014/small/2014_-_3_dragoncrs3.jpg" onclick="currentSlide(3)" alt="dragon spacecraft in orbit">
+					<img class="cursor" src="img/2014/small/2014_-_4_f9r-dev-08.jpg" onclick="currentSlide(4)" alt="f9r test vehicle launches in mcgregor, tx">
+					<img class="cursor" src="img/2014/small/2014_-_5_falcon_9_thaicom_launch-01.png" onclick="currentSlide(5)" alt="falcon 9 lifting off">
+					<img class="cursor" src="img/2014/small/2014_-_6_falcon_9_thaicom_launch-02.jpg" onclick="currentSlide(6)" alt="falcon 9 at space launch complex 40">
+					<img class="cursor" src="img/2014/small/2014_-_7_v2_interior_wide.jpg" onclick="currentSlide(7)" alt="crew dragon interior at unveiling">
+					<img class="cursor" src="img/2014/small/2014_-_8_superdraco_jetpack.jpg" onclick="currentSlide(8)" alt="superdraco engine jet pack">
+				</div>
+				<div class="col1 largeImg">
+			 <div class="y2014">
+   			 <div class="numbertext">1 / 8</div>
+    		 <img src="img/2014/2014_-_1_crs-3_dragonmating%20(1).jpg" alt="dragon spacecraft mated to falcon 9 rocket">
+  			</div>
+			<div class="y2014">
+   			 <div class="numbertext">2 / 8</div>
+    		 <img src="img/2014/2014_-_2_crs3_launch_causeway_2.jpg" alt="falcon 9 and dragon launch from slc-40">
+  			</div>
+			<div class="y2014">
+   			 <div class="numbertext">3 / 8</div>
+    		 <img src="img/2014/2014_-_3_dragoncrs3.jpg" alt="dragon spacecraft in orbit">
+  			</div>
+			<div class="y2014">
+   			 <div class="numbertext">4 / 8</div>
+    		 <img src="img/2014/2014_-_4_f9r-dev-08.jpg" alt="f9r test vehicle launches in mcgregor, tx">
+  			</div>
+			<div class="y2014">
+   			 <div class="numbertext">5 / 8</div>
+    		 <img src="img/2014/2014_-_5_falcon_9_thaicom_launch-01.png" alt="falcon 9 lifting off">
+  			</div>
+			<div class="y2014">
+   			 <div class="numbertext">6 / 8</div>
+    		 <img src="img/2014/2014_-_6_falcon_9_thaicom_launch-02.jpg" alt="falcon 9 at space launch complex 40">
+  			</div>
+			<div class="y2014">
+   			 <div class="numbertext">7 / 8</div>
+    		 <img src="img/2014/2014_-_7_v2_interior_wide.jpg" alt="crew dragon interior at unveiling">
+  			</div>
+			<div class="y2014">
+   			 <div class="numbertext">8 / 8</div>
+    		 <img src="img/2014/2014_-_8_superdraco_jetpack.jpg" alt="superdraco engine jet pack">
+  			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			</div>
+		</div>
+	</main>
+<footer>
+    <section class="container row">
+        <div class="col1"><h3>Join Our Community</h3> <p>We have a strong community. If you are interested in discussing about our missions with other space enthusiasts.</p>
+            <a href="https://www.reddit.com/r/spacex/">Click Here</a>
+        </div>
+        <div class="col1"><h3>Contact Information</h3> <p>Phone: <a>310-363-6000</a></p>
+        <h4>MEDIA INQUIRIES</h4><a href="mailto:media@spacex.com">media@spacex.com</a>
+        <h4>SALES INQUIRIES</h4><a href="mailto:sales@spacex.com">sales@spacex.com</a>
+        </div>
+        <div id="social-M" class="col1">
+            <h3>Social Media</h3>
+            <a href="https://nb-no.facebook.com/groups/spacexgroup/"><img src="img/facebook.svg"></a>
+            <a href="https://twitter.com/spacex"><img src="img/twitter.svg"></a>
+            <a href="https://www.instagram.com/spacex/?hl=nb"><img src="img/instagram.svg"></a>
+        </div>
+    </section>
+    <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mission.html#Falcon">MISSION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+    </section>
+    <section id="copyright">
+        <p>© 2019 Made by Christian schrodahl</p>
+    </section>
+</footer>
+<script src="script.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>
